@@ -21,10 +21,6 @@ static class Parameters {
         Default hello = new Default();
         Parameters employeedetails = new Parameters("Pranav",007);
         System.out.println("employee name is "+employeedetails.name+" and employee id is "+employeedetails.id);
-
-
     }
-
-
-
 }
+
