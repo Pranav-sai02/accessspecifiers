@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 
-public class patient {
+public class Patient {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -33,13 +33,13 @@ public class patient {
     }
 
     public static void insertPatient(String name, int age, String phone, String condition, String disease) {
-        Connection conn = SqlJavaConnection.getConnection();
+        Connection conn = PatientDB.getConnection();
         if (conn == null) {
             System.out.println(" Failed to connect to database.");
             return;
         }
 
-        // Adjusted SQL column names to match your `patients` table in `appointment` database
+        // Adjusted SQL column names to match `patients` table in `appointment` database
         String query = "INSERT INTO patients (name, age, phone_number, conditions, disease) VALUES (?, ?, ?, ?, ?)";
         try {
             PreparedStatement stmt = conn.prepareStatement(query);
