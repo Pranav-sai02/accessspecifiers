@@ -123,7 +123,7 @@ public class Main {
             }
 
             // Step 7: Insert Appointment into `appointment_details`
-            String insertAppointmentSQL = "INSERT INTO appointment_details (patient_name, patient_id, doctor_id, symptoms, appointed_time) VALUES (?, ?, ?, ?, ?)";
+            String insertAppointmentSQL = "INSERT INTO appointment.appointment_details (patient_name, patient_id, doctor_id, symptoms, appointed_time) VALUES (?, ?, ?, ?, ?)";
             PreparedStatement appointmentStmt = conn.prepareStatement(insertAppointmentSQL);
             appointmentStmt.setString(1, name);
             appointmentStmt.setInt(2, patientId);
