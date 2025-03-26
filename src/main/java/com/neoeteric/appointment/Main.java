@@ -56,6 +56,7 @@ public class Main {
         try {
             // Step 2: Establish Database Connection
             Connection conn = HospitalDbConnection.getConnection();
+            System.out.println("Connected to Database: " + conn.getCatalog());
 
             // Step 3: Find the Doctor Specialization based on Symptoms
             String specialization = symptomToSpecialist.get(symptoms);
