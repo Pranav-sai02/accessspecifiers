@@ -1,4 +1,4 @@
-package com.neoeteric.constructors;
+package com.neoeteric.multiconstructor.constructors;
 
 class Default {
 
