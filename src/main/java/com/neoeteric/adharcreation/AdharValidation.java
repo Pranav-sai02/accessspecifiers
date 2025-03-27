@@ -47,7 +47,7 @@ public class AdharValidation {
     //  Send OTP via Fast2SMS API
     public static void sendOtp(String mobileNumber, int otp) {
         try {
-            String apiKey = "nBgYwolFsGwxAzM9yIIOIM0wB5lYqh4IUjXNUCbpBeJUh6HKLZwFiVs07UY2"; // API key
+            String apiKey = ""; // API key
             String message = "Your OTP is: " + otp;
 
             String urlString = "https://www.fast2sms.com/dev/bulkV2";
